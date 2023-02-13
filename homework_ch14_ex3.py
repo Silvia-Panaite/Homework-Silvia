@@ -1,27 +1,21 @@
-list = []
+list_negatives = []
+list_zeros = []
+list_positives = []
 
 while True:
-    number = int(input('Please type in a number: '))
-    if number == '':
+    number = int(input('Please type in a number: '))   
+    if number == ' ':
         break
     if number < 0:
-        list = list + [number]
-        list.sort()
-        print('The list with negatives is: ')
-        for item in list:
-            print(' - ' + str(item))
-    if number == 0:
-        list = list + [number]
-        list.sort()
-        print('The list with 0 is: ')
-        for item in list:
-            print(' - ' + str(item))
-    if number > 0:
-        list = list + [number]
-        list.sort()
-        print('The list with positives is: ')
-        for item in list:
-            print(' - ' + str(item))
+        list_negatives = list_negatives + [number]
+    elif number == 0:
+        list_zeros = list_zeros + [number]
+    elif number > 0:
+        list_positives = list_positives + [number]
+
+print(list_negatives)
+print(list_zeros)
+print(list_positives)
 
 
 

@@ -1,14 +1,14 @@
-list = []
+list_ = []
 
 while True:
     number = int(input('Please type in a number: '))
     if number == 0:
         break
-    list = list + [number]
+    list_ = list_ + [number]
 
-list.sort()
+list_.sort()
 
-print('The shopping list is: ')
+print('The list is: ')
 for item in list:
     print(' - ' + str(item))
 
