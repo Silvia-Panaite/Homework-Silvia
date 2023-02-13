@@ -3,15 +3,16 @@ list_zeros = []
 list_positives = []
 
 while True:
-    number = int(input('Please type in a number: '))   
-    if number == ' ':
-        break
+    number = int(input('Please type in a number: '))
     if number < 0:
-        list_negatives = list_negatives + [number]
+        list_negatives.append(number)
     elif number == 0:
-        list_zeros = list_zeros + [number]
+        list_zeros.append(number)
     elif number > 0:
-        list_positives = list_positives + [number]
+        list_positives.append(number)
+    else:
+        number = input('Please type in a number: ') 
+        break
 
 print(list_negatives)
 print(list_zeros)
