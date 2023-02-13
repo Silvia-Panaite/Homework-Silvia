@@ -1,7 +1,9 @@
-list1 = []
+list = []
 
 while True:
     number = int(input('Please type in a number: '))
+    if number == '':
+        break
     if number < 0:
         list = list + [number]
         list.sort()
