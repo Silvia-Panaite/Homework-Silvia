@@ -9,10 +9,13 @@ def proper_divisor(n: int) -> list:
 
 print(proper_divisor(n))
 
+
 def main():
     n = int(input('Please enter a positive integer: '))
+    for j in range(1, (n//2) + 1):
+        j = list(proper_divisor(n))
     print('The list of proper divisors of', n, 'is:')
     print(proper_divisor(n))
-    
+
 
 

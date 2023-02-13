@@ -9,7 +9,7 @@ def perfect_number(number:int):
     return answer
 
 def main():
-    for i in range(1,100001):
+    for j in range(1, 100001):
         val = perfect_number(j)
         if val is True:
             print(j)
