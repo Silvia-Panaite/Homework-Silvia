@@ -1,13 +1,13 @@
-list = []
+list_ = []
 
 while True:
     number = int(input('Please type in a number: '))
     if number == 0:
         break
-    list = list + [number]
+    list_.append()
 
 list.reverse()
 
 print('The shopping list is: ')
-for item in list:
+for item in list_:
     print(' - ' + str(item))
