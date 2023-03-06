@@ -17,6 +17,6 @@ def create_morse_message(text):
 def main():
     morse = create_morse_message("Hello World!")
     print(morse)
- 
+
 if __name__ == '__main__':
     main()
